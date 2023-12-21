@@ -54,22 +54,91 @@
     Work through the tasks until the boxes match the `task-1.png` design inside the `design` folder.
     Making changes to the HTML is not allowed! The tasks must be completed using CSS alone.
     */
+    
+    [id^=flexContainer] {
+      display: flex;
+    }
 
     /* 👉 Task 1 - [HINT] only the flex container needs to be manipulated */
+    #flexContainer1 {
+      justify-items: center;
+      justify-content: space-around;
+    }
 
     /* 👉 Task 2 - [HINT] the flex container needs to change direction */
+    #flexContainer2 {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
 
     /* 👉 Task 3 - [HINT] the flex direction can be reversed */
+    #flexContainer3 {
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
 
     /* 👉 Task 4 - [HINT] the flex items need a new order */
-
+    #flexContainer4 {
+      flex-direction: row-reverse;
+      align-items: flex-end;
+      justify-content: space-around;
+    }
+    #flexContainer4 .flexItem:nth-child(1) {
+      order: 2;
+    }
+    #flexContainer4 .flexItem:nth-child(3) {
+      order: 3;
+    }
+    
     /* 👉 Task 5 - [HINT] research align-self */
+    #flexContainer5 {
+      flex-direction: column;
+      justify-content: center;
+    }
+    #flexContainer5 .flexItem:nth-child(2) {
+      align-self: center;
+    }
 
     /* 👉 Task 6 - [HINT] flex items can be flex containers */
+    #flexContainer6 {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: self-end;
+    }
+    #flexContainer6 .flexItem:nth-child(3) {
+      align-self: self-start 
+    }
+    #flexContainer6 .flexItem:nth-child(2) {
+      align-items: end;
+    }
+    #flexContainer6 .flexItem:nth-child(1) {
+      justify-content: right;
+    }
 
     /* 👉 Task 7 - [HINT] research flex-grow */
+    #flexContainer7 .flexItem:nth-child(3) {
+      flex-grow: 3;
+    }
+    #flexContainer7 .flexItem:nth-child(2) {
+      flex-grow: 2;
+    }
 
     /* 👉 Task 8 - [HINT] you got this! */
+    #flexContainer8 {
+      justify-content: space-between;
+    }
+    #flexContainer8 .flexItem:nth-child(1) {
+      justify-content: right;
+    }
+    #flexContainer8 .flexItem:nth-child(2) {
+      align-self: center;
+    }
+    #flexContainer8 .flexItem:nth-child(3) {
+      justify-content: left;
+      align-self: flex-end;
+    }
 
 
     /*
